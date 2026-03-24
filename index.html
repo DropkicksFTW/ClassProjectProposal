@@ -2,53 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Class Project Proposal</title>
+    <title>Proposal</title>
 </head>
 <body>
     <h1>Class Project Proposal</h1>
     <ol>
-        <li><strong>Product Name:</strong> Arduino Sequence Master: Logic & Memory Challenge</li>
-        <li><strong>Team Members:</strong> Chris, Michael Vincent Santay</li>
-        <li><strong>Application Overview:</strong> This project is a hardware-based puzzle game that generates randomized numeric or color-coded sequences. The player must use buttons to input the correct sequence within a set time limit. The core of the game focuses on <strong>sequence selection</strong> and <strong>algorithmic loops</strong> to manage game states and verify user accuracy.</li>
-        <li><strong>Technology Overview:</strong> 
+        <li>Product Name: Arduino Sequence Master</li>
+        <li>Team Members: Chris, Michael Vincent Santay</li>
+        <li>Application Overview: This is a hardware game where the Arduino creates a random sequence of lights and sounds. The player has to use buttons to repeat the sequence perfectly to move to the next level.</li>
+        <li>Technology Overview: Arduino Uno, C++ Programming, LEDs, Buttons, and Git for version control.</li>
+        <li>Proposal Last Updated: 03/24/2026</li>
+        <li>Feature List: 
             <ul>
-                <li><strong>Hardware:</strong> Arduino Uno, Input Buttons, LED Output Array, Piezo Buzzer.</li>
-                <li><strong>Software:</strong> C++ (Arduino Sketch), Git for version control.</li>
+                <li>Random sequence generation</li>
+                <li>Button input detection</li>
+                <li>LED and sound feedback</li>
             </ul>
         </li>
+        <li>Future Feature List: Add a high-score screen and a "two-player" mode where players challenge each other.</li>
+        <li>Basic Technical Features: Using arrays to store the pattern and "for" loops to play the pattern back and check the user's input.</li>
+        <li>Advanced Technical Features: Using a state machine to handle the game flow and custom functions for the buzzer sounds.</li>
     </ol>
-
-    <hr>
-
-    <h2>Proposal Last Updated</h2>
-    <p>March 24, 2026</p>
-
-    <h2>Feature List</h2>
-    <ul>
-        <li><strong>Dynamic Sequence Generation:</strong> Uses C++ <code>random()</code> logic to create a new challenge every round.</li>
-        <li><strong>Multi-Level Difficulty:</strong> Incremental loops that increase sequence length as the player progresses.</li>
-        <li><strong>Real-time Feedback:</strong> Visual (LED) and Auditory (Buzzer) cues for correct/incorrect inputs.</li>
-        <li><strong>Score Tracking:</strong> Keeps track of the highest level reached during the session.</li>
-    </ul>
-
-    <h2>Future Feature List</h2>
-    <ul>
-        <li><strong>Save State:</strong> Using EEPROM to save high scores even after the Arduino is powered off.</li>
-        <li><strong>Custom Mode:</strong> Allowing a second player to "program" a sequence for the first player to solve.</li>
-        <li><strong>LCD Integration:</strong> Moving from LED blinks to a full text-based menu system.</li>
-    </ul>
-
-    <h2>Basic Technical Features</h2>
-    <ul>
-        <li><strong>Sequence Selection Logic:</strong> Utilizing C++ <strong>Arrays</strong> to store and compare "Target" vs "Player" data.</li>
-        <li><strong>Iterative Loops:</strong> <code>for</code> and <code>while</code> loops to cycle through sequences and check for input timeouts.</li>
-        <li><strong>Conditional Branching:</strong> <code>if/else</code> structures to determine win/loss conditions based on sequence matching.</li>
-    </ul>
-
-    <h2>Advanced Technical Features</h2>
-    <ul>
-        <li><strong>State Machine Architecture:</strong> Managing game flow (Idle -> Playback -> User Input -> Result) using <code>switch</code> statements.</li>
-        <li><strong>Debouncing Logic:</strong> Software-level timing to prevent "double-counting" a single physical button press.</li>
-    </ul>
 </body>
 </html>
